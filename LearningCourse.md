@@ -1,23 +1,107 @@
 # Data Hazard Labels
- The most basic element in conducting research is data in its many forms. The methods for collecting and presenting of this data can vary greatly depending on the source and methodology which in turn can lead to problems in evaluation and conclusions. Especially the use of increasingly complex digital technologies has muddied the question of responsibility for certain outputs or decisions made by algorithms. These effects and outcomes can have consequences ranging from slight deviations in results to actively harmful effects for people and the environment. Thus a reflected and responsible approach to using data science is more important than ever, but since data can be abstract and nuanced this can be difficult.\\To give perspective on the difficulties and problems for specific works or sources using data science the Data Hazard Project was founded. Data Hazard Labels are similar to their real world counterparts and aim to help highlight aspects that could limit the outcome or lead to problems if they are not considered carefully.  These labels are not simple true or false problems and more than a single label can be applied to a dataset or a project. Each label comes with its own set of challenges and solutions and none of these labels are strict guidelines and rules, but are meant to facilitate communication and create understanding about the problems that can happen through improper use of data science.
+ The most basic element in conducting research is data in its many forms. The methods for collecting and presenting of this data can vary greatly depending on the source and methodology which in turn can lead to problems in evaluation and conclusions. Especially the use of increasingly complex digital technologies has muddied the question of responsibility for certain outputs or decisions made by algorithms.
+ These effects and outcomes can have consequences ranging from slight deviations in results to actively harmful effects for people and the environment. Thus a reflected and responsible approach to using data science is more important than ever, but since data can be abstract and nuanced this can be difficult.
+ &nbsp;
+ To give perspective on the difficulties and problems for specific works or sources using data science the [Data Hazard Project](https://datahazards.com/index.html#) was founded. Data Hazard Labels are similar to their real world counterparts and aim to help highlight aspects that could limit the outcome or lead to problems if they are not considered carefully.  These labels are not simple true or false problems and more than a single label can be applied to a dataset or a project. Each label comes with its own set of challenges and solutions and none of these labels are strict guidelines and rules, but are meant to facilitate communication and create understanding about the problems that can happen through improper use of data science.
 
 ## Generic Data Hazard
+![generic-hazard](img/general-hazard.png)
 Definition
-
+==========
 The General Data Hazard label is the most basic label that has the broadest application. All software, algorithms and data outputs using data science fall into this category. The label is meant to create accountability by giving the creators the full responsibility of the output. It also encourages vetting the data sources and giving an extensive write-up of expectations and assumptions while addressing potential shortcomings.
 
 ## Reinforces Existing Biases
-This label indicates that the data, algorithm or software could result in unfair treatment of individuals and certain groups of people. There can be many reasons where this hazard could originate: \\
-A bias may be exacerbated through input data, if the input data contains biases itself which are then not addressed. The design of an algorithm may also cause a bias, if it weighs certain characteristics that favour individuals or groups over others. Societal biases find their way into data and algorithms, by reflecting already existing biases which may then result in reinforced stereotypes. \\ 
+Definition
+=================
+This label indicates that the data, algorithm or software could result in unfair treatment of individuals and certain groups of people. There can be many reasons where this hazard could originate. 
+&nbsp;
+A bias may be exacerbated through input data, if the input data contains biases itself which are then not addressed. The design of an algorithm may also cause a bias, if it weighs certain characteristics that favour individuals or groups over others. Societal biases find their way into data and algorithms, by reflecting already existing biases which may then result in reinforced stereotypes. 
+&nbsp;
 These biases are often  unwanted and unintentional, but may have negative unforeseen consequences if they remain unaddressed.
 
 
+Examples
+========
+Input data
+----------
+n algorithm that uses historic employment data that comes to the conclusion that men are more suited to managerial position, as historically men were favoured or even the only allowed candidates for such positions.
+
+&nbsp;
+Societal Bias
+------------
+Natural Language processing data can reinforce sexist biases due to a bias in training data. This could mean that a model evaluates certain jobs such as secretary or caretaker as intrinsically linked to women. 
+
+&nbsp;
+Prevention of Bias
+================
+To minimize the risk of perpetuating a bias based there are multiple strategies that can be applied when using data, software or algorithms that have the Reinforces Existing Biases label.
+
 ## Ranks or classifies people
+Definition
+=========
+The application of this label indicates that there is data that ranks or classifies people into different categories. Such data must always be used considerately and carefully, as it can have wide ranging consequences. Problems for this label can be an inaccurate classification process, oversight for the categorization of certain groups or even exploitable ranking systems.
+
+&nbsp;
+Examples
+========
+Using AI to evaluate the chance of reoffending. Since some communities have been overpoliced and unproportionally impacted by policies the AI might mark people from these communities as having a higher chance of reoffending. The classification of these individuals reinforces existing biases as well.\\
+Another example would be an automated hiring system that favours certain ethnic groups due to an unfair weighing system.
+
+&nbsp;
+Prevention of improper ranking and classification
+=======
+Testing for different groups
+-------------
+Testing the algorithm on different groups ensures that no side effects or disproportional impact of groups due to the classification system.
+
+
+&nbsp;
+Verify validity of classification groups
+--------------------
+To ensure the validity of the classification groups, experts and subject specialists should be involved in the creation of the ranking system. This ensures that different views are represented and that the categories are needed for the end goal of the algorithm or technology.
+
+
+&nbsp;
+Transparency
+------------
+By communicating weaknesses and shortcomings of the algorithm or technology openly trust can be built and shortcomings addressed.  Testing for weaknesses and exploitable points in the algorithm to prevent the abuse of classification that give an undue advantage or  disadvantage.
+
+
+&nbsp;
+Aletrnative ranking
+---------------
+Its important to consider different alternative rankings and confer with experts on the most fitting system. This allows for different viewpoints which reduces the risk of miscategorizing groups.  Self-selecting can also be a good way to grade people, as this allows them to consider their own nuances and contribute instead of being put into categories without being able to influence the process at all.
 
 
 
 ## Automates decision making
+Definition
+============
+This data hazard label is applied whenever an algorithm or technology replaces human decision making. The extent and scope of the automation can vary greatly, as can the risks. Its important to look at the potential benefits and risks, as well as who is in charge of the automation process. This label has some of the broadest scope of necessary risk assessment and needs to be tested thoroughly before any use.
 
+&nbsp;
+Examples
+=========
+A banking program that decides automatically whether a transaction is fraudulent or not. This example carries relatively low risk, but can also cause problems.\\
+A different example would be the automated evaluation of cancer screenings by a healthcare service program. The results of this can have great impacts on the well being of individuals and the risk is very high.\\
+These examples highlight the differences of automated decisionmaking in different fields and the impact of the grade of consequences.
+
+
+Precautions for automated decision making
+==========
+Considering necessity
+---------------
+Consider carefully if the decision really needs to be automated or if it should stay a decision made by a human. For this an in depth look at the damage of potential consequences is needed.
+
+&nbsp;
+Implementing review systems
+--------------
+Create systems that allow for the inclusion of incorrect cases to improve the future output. For critical systems there should be training data that covers cases as extensively as possible before it is put to real use.
+
+&nbsp;
+Transparency
+---------------
+It is important that decisions can be retraced understood by a human in a timely manner. It is important that actual users also have a chance to get at least a surface level understanding of how and why their input got placed or why it failed. This creates accountability and can allow for more intricate review of a case by a human. Transparency of the output is also very important to determine if the system is working as intended and to make potential issues addressable.
 
 ## Danger of misuse
 
