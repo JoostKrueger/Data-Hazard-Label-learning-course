@@ -173,12 +173,12 @@ What are examples of an automated system that reinforces existing biases?
 
 ### Precautions for automated decision making
  **Considering necessity**
- Consider carefully if the decision really needs to be automated or if it should stay a decision made by a human. For this an in depth look at the damage of potential consequences is needed.
+ Consider carefully if the decision really needs to be automated or if it should stay a decision made by a human. For this an in depth look at the damage of potential consequences is needed. The automation can help to contribute to decisionmaking quickly and if properly considered and developed can help to consider requests far faster and more precisely than humans could.
  <br />
  <br />
 
  **Implementing review systems**
- Create systems that allow for the inclusion of incorrect cases to improve the future output. For critical systems there should be training data that covers cases as extensively as possible before it is put to real use.
+ Create systems that allow for the inclusion of incorrect cases to improve the future output. For critical systems there should be training data that covers cases as extensively as possible before it is put to real use. Problematic cases should be inspected to find the difficulties the automated decisionmaking has and remedied. These cases can then be used in testing for the same or similar systems to improve future accuracy.
  <br />
  <br />
  
@@ -199,21 +199,34 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
 
 ## Danger of misuse
 ### Definition
-
+Danger of misuse is
 
 
 ### Examples
+The use of generative ai in recent months has contributed to a lots of unintended consequences. These range from misuse of data, by using data sources which had not consented to being used to harmful through political or personal slander using generated images. [Despite generative ai companies trying to reduce these cases, these cases are only getting worse.](https://counterhate.com/research/fake-image-factories-ii/). These cases could and should have been anticipated before the release and more time put into prevention.
+https://counterhate.com/research/fake-image-factories-ii/
+
+
+### Prevention of misuse
+**Explaining use**
+Explain the exact circumsances and environments in which the technology or data is meant to be used. This ensures that use cases not within these set boundaries need to be examined seperately by their creators. It is best however to try and find limitations and applications beforehand and outlining how to prevent such cases or why this technology, algorithm or data should not be used in certain cases.
+ <br />
+ <br />
+
+**Follow guidelines**
+Check if there are any guidelines in your area of research. These guidelines usually draw from mulitple sources and instances in which problems arose. This can help to create a robust foundation that can prevent the data or technology from being used in unwanted ways. Just following guidelines alone might not be enough to fully prevent these cases.
+ <br />
+ <br />
+
+**Check other applications**
+As mentioned before, it is also important to check in which fields or other ways the technology and data might be useable or applicable. It is almost impossible to consider all possible application, but finding the most likely related fields can help to stop unwan
+
+### Videos
 Black Mirror: "The Entire History of You" (S1E3)
 
 Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
 5:14-5:30 (Deepfakes)
 18:47-19:12 (Huawei testet Gesichtserkennung in China zur Erkennung von Uiguren)
-
-
-### Prevention of misuse
-
-### Videos
-
 
 ### Quiz
 
@@ -230,6 +243,7 @@ Harm can also be caused by any of the other hazard labels, when used in
 
 ### Prevention of harm
 
+
 ### Videos
 Black Mirror: "The Entire History of You" (S1E3)
 		"Be Right Back" (S2E1)
@@ -241,8 +255,9 @@ Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
 ### Quiz
 
 
-## Generic Data Hazard
 
+## Generic Data Hazard
+The label is meant to create accountability by giving the creators the full responsibility of the output. It also encourages vetting the data sources and giving an extensive write-up of expectations and assumptions while addressing potential shortcomings. 
 
 ### How to apply data hazard labels?
 The application of data hazard labels is not meant as an apply and be done with it concept. The labels are meant to open up discussion and help with reflection on responsible ethical use and potential consequences of data science.
