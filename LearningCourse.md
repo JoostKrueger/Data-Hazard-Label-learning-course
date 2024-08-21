@@ -184,7 +184,9 @@ https://cs.stanford.edu/people/jure/pubs/bail-qje17.pdf deciding who should reci
  The Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) software is a tool designed to asses the likelihood of re-offending of criminal inmates in the US. It is meant to support judges in their sentencing decisions on bail, parole and sentencing. It was meant to reduce biases providing a data driven viewpoint.
  The algorithm used data such as criminal history, race, age, gender, employment and education, among others. These factors were then used to create predicitons on re-offending chance, failure to appear in court or risk of violent behaviour.
  A review of COMPAS's use found that it exibited a racial bias and led to overall stronger sentencing due to the data used to train it. It also operates as a black box system, meaning that users may can not retrace how the algorithm came to the conclusions it did.
- These decisions had impacts on those it judged and might have made incorrect predicitons leading to longer sentencing, denial of parole or denial of bail. This highlights some potential problems of automated decisionmaking, which need to be considered
+ These decisions had impacts on those it judged and might have made incorrect predicitons leading to longer sentencing, denial of parole or denial of bail. 
+ This highlights some potential problems of automated decisionmaking, which need to be considered, to ensure that the process is as fair and safe as possible.
+ https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
  
 
  These examples highlight the differences of automated decisionmaking in different fields and the impact of the grade of consequences.
