@@ -3,7 +3,7 @@
 <br>
 <br>
 <br>
- The most basic element in conducting research is data in its many forms. The methods for collecting and presenting of this data can vary greatly depending on the source and methodology which in turn can lead to problems in evaluation and conclusions. Especially the use of increasingly complex digital technologies has muddied the question of responsibility for certain outputs or decisions made by algorithms.
+ The most basic element in conducting research is data in its many forms. The methods for collecting and presenting of this data can vary greatly depending on the source and methodology which in turn can lead to problems in evaluation and conclusions. Especially the use of increasingly complex digital technologies has increased the complexity of assigning responsibility for certain outputs or decisions made by algorithms.
 
  These effects and outcomes can have consequences ranging from slight deviations in results to actively harmful effects for people and the environment. Thus a reflected and responsible approach to using data science is more important than ever, but since data can be abstract and nuanced this can be difficult.<br>
 
@@ -24,7 +24,6 @@
  
 
 ## Reinforces Existing Biases
-### Definition
 <img src="img/reinforce-bias.png" alt="reinforce-bias" width="200"/><br>
  This label indicates that data, algorithms, or software could lead to unfair treatment of individuals or certain groups. There are various reasons why this hazard might arise.
 
@@ -39,7 +38,11 @@
 
 ### Examples
  **Input data**  <br>
-  An algorithm that uses historic employment data that comes to the conclusion that men are more suited for managerial position, as historically men were favoured or even the only allowed candidates for such positions.
+  In 2014, retailer Amazon started to develop an automated hiring tool using applcation data from the company itself, that were sent in over a 10 year period. As the gender imbalance was even more pronounced during that time than it is today, a vast majority of the learning data lead to the algorithm favouring male candidates.
+  Whenever the algorithm found the word "woman" in an application, it automatically ranked that application lower, which in turn would worsen the bias in the future, when that data was then used again for learning.
+  When the bias was discovered 4 years later in 2018, it caused a public outcry, leading the system to be scrapped (https://www.bbc.com/news/technology-45809919) entirely after fixing it proved too difficult.
+  
+  This example shows, just how important choosing input data can be and the consequences that can happen when there are unadressed problems in that data. Not only were the ressources and time development of the tool wasted, they also worsened the already existing problem of gender imbalance in the tech sector even further.
 
  **Societal Bias**  <br>
  Natural Language processing data can reinforce sexist biases due to a bias in training data. This could mean that a model evaluates certain jobs such as secretary or caretaker as intrinsically linked to women.
@@ -47,12 +50,6 @@
  Such cases were [studied](https://dl.acm.org/doi/abs/10.1145/3582269.3615599) and both natural and large language models were found perpetuate stereotypes.
  Since these models are used more, great care should be taken when working with such cases and active measures taken to prevent the spread of such stereotyping.
  These examples also show how easily such consequences happen. It is unlikely that these outcomes were planned, and it shows that active measures need to be taken to avoid cases such as these. <br>
-
-
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4400026
-Mugshot bias
-
-
 
 <img src="img/stereotypical-female-jobs.png" alt="reinforce-bias" width="350"/>
 <img src="img/stereotypical-male-jobs.png" alt="reinforce-bias" width="350"/>
@@ -106,7 +103,6 @@ Which is an example of societal bias in natural language processing data?
 
 
 ## Ranks or classifies people
-### Definition
  <img src="img/classifies-people.png" alt="classifies-people" width="200"/><br>
  This label indicates that the data is used to rank or classify people into different categories. It is crucial to use such data considerately and carefully, as it can have far-reaching consequences.
 
@@ -115,14 +111,23 @@ Which is an example of societal bias in natural language processing data?
  Therefore, it is important to ensure the accuracy and fairness of the classification and ranking systems to avoid negative impacts on individuals and groups.
 
 ### Examples
- Using AI to evaluate the chance of reoffending. Since some communities have been overpoliced and unproportionally impacted by policies the AI might mark people from these communities as having a higher chance of reoffending. The classification of these individuals reinforces existing biases as well.
+ **Wellfare risk assessment**
+ In 2014 the durch tax bureau used machine learning to classify families into different risk categories to prevent fraud for child benefits. The government had problems with families fraudulently claiming child benefits and had problems dealing with the administrative demands. The decision to prevent fraud started to aid with these problems and used a variety of data, like nationality, income and historical employment.
+ The classifications were insufficient, as it did not have enough room for context and put hundreds of families into high risk groups for making small administrative mistakes or giving stricter conditions based on dual citizenship. If they were flagged they had to pay back all benefits retroactively and with additional fines on short notice. These repayments mainly affected low income families, which suffered heavily under these conditions. The algorithm was not transparent for those affected and prevented them from challenging their classifications properly and the limited categorization worsened the chances of flagged families even further.
+ When the disproportional treatment due to minor mistakes or miscategorization was discovered in 2019 and a european commission was put into place which found evidence of discrimination and improper data usage. 
+ 
+ The scope of this scandal, dubbed the ["Toeslangenaffair"](https://www.uantwerpen.be/en/projects/aitax/publications/toeslagen/) and following findings would cause the ruling government at the time to resign. This case shows how strong the consequences for unadressed problems can be. Most of the affected families struggled to repay the benefits and were pushed into poverty. 
 
- Another example would be an automated hiring system that favours certain ethnic groups due to an unfair weighing system.
+
+ **Automated hiring systems**
+ Returning to the example of the [Amazon hiring system](#examples) the system ranked people according to their qualifications for tech jobs to give suggestions on whom to hire.
+ As the system was trained with flawed data, it ranked women as less viable candidates than men. This bias in classification of individuals caused unfair treatment and had a negative impact on the gender imbalance by denying qualified women to enter the tech sector in a big employer in the sector.
+
+ 
 
 ### Prevention
  **Testing for different groups** <br>
  Testing the algorithm on different groups ensures that no side effects or disproportional impact of groups due to the classification system.
-
 
  **Verify validity of classification groups** <br>
  To ensure the validity of the classification groups, experts and subject specialists should be involved in the creation of the ranking system. This ensures that different views are represented and that the categories are needed for the end goal of the algorithm or technology.
@@ -165,7 +170,6 @@ What are examples of an automated system that reinforces existing biases?
 - [[x]] An algorithm predicting music based on liked songs
 
 ## Automates decision making
-### Definition
  <img src="img/automates-decision-making.png" alt="automates-decision making" width="200"/>
  This hazard label is applied when an algorithm or technology replaces human decision-making. The extent and scope of this automation can vary widely, as can the associated risks. 
  These decision processes may not always be transparent or appealable, yet can have large impacts on individuals. Bugs or malfunctions can also go unnoticed for some time and cause damages.
@@ -174,7 +178,6 @@ What are examples of an automated system that reinforces existing biases?
  Understanding who controls the automation process and ensuring this process is transparent and accountable, are key factors in managing this data hazard effectively.
 
 ### Examples
-https://cs.stanford.edu/people/jure/pubs/bail-qje17.pdf deciding who should recieve bail
 
 **Banking proces**<br>
  A low risk example of an automated decisionmaking process are bank transfers. Most bank transfers are carried out automatically with the system highlighting irregular transfers, which then in turn have to be evaluated by a human.
@@ -183,13 +186,10 @@ https://cs.stanford.edu/people/jure/pubs/bail-qje17.pdf deciding who should reci
  **COMPAS software** <br>
  The Correctional Offender Management Profiling for Alternative Sanctions (COMPAS) software is a tool designed to asses the likelihood of re-offending of criminal inmates in the US. It is meant to support judges in their sentencing decisions on bail, parole and sentencing. It was meant to reduce biases providing a data driven viewpoint.
  The algorithm used data such as criminal history, race, age, gender, employment and education, among others. These factors were then used to create predicitons on re-offending chance, failure to appear in court or risk of violent behaviour.
- A review of COMPAS's use found that it exibited a racial bias and led to overall stronger sentencing due to the data used to train it. It also operates as a black box system, meaning that users may can not retrace how the algorithm came to the conclusions it did.
+ A [review](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing) of COMPAS's use found that it exibited a racial bias and led to overall stronger sentencing of black defendants. It also operates as a black box system, meaning users could not retrace how the algorithm came to the conclusions it did. 
  These decisions had impacts on those it judged and might have made incorrect predicitons leading to longer sentencing, denial of parole or denial of bail. 
- This highlights some potential problems of automated decisionmaking, which need to be considered, to ensure that the process is as fair and safe as possible.
- https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
- 
 
- These examples highlight the differences of automated decisionmaking in different fields and the impact of the grade of consequences.
+ This highlights some potential problems of automated decisionmaking, which need to be considered, to ensure that the process is as fair and safe as possible.
  <br />
  <br />
 
@@ -223,14 +223,20 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
 
 
 ## Danger of misuse
-### Definition
-The "Danger of misuse" labels applies when algorithms or data can be outside of their intended purposes, often leading to unintended and potentially harmful consequences. Algorithms are designed with specific goals and environments in mind and when outside of these, they may produce wrong or unusable results. This misuse can be dangerous because the algorithms or data might lack the necessary safeguards or considerations for contexts they were not designed for, leading to decisions that could harm individuals or groups. 
+<img src="img/misuse.png" alt="misuse" width="200"/>
+ The "Danger of misuse" labels applies when algorithms or data can be outside of their intended purposes, often leading to unintended and potentially harmful consequences. Algorithms are designed with specific goals and environments in mind and when outside of these, they may produce wrong or unusable results. This misuse can be dangerous because the algorithms or data might lack the necessary safeguards or considerations for contexts they were not designed for, leading to decisions that could harm individuals or groups. 
 
 For data the collection is one of the most important issues to consider and using data gathered for another purpose use may skew or invalidate the results outright. Thus it is important consider the context and inherant deviations in the data.
 
 
 ### Examples
-The use of generative ai in recent months has had unintended consequences. These range from misuse of data, by using data sources which had not consented to being used in harmful ways through political propaganda or personal slander using generated images. [Despite generative ai companies trying to reduce these cases, these cases are only getting worse.](https://counterhate.com/research/fake-image-factories-ii/). These cases could and should have been anticipated before the release and more time put into prevention.<br />
+**Cambridge Analytica**
+ The political consulting firm Cambridge Analytica used data gathered from Facebook accounts and used it to build detailed user profiles to create 
+
+
+**Generative AI**
+ The use of generative ai in recent months has had unintended consequences. These range from misuse of data, by using data sources which had not consented to being used in harmful ways through political propaganda or personal slander using generated images. [Despite generative ai companies trying to reduce these cases, these cases are only getting worse.](https://counterhate.com/research/fake-image-factories-ii/). These cases could and should have been anticipated before the release and more time put into prevention.
+ Even with more awareness being drawn to this problem, problems are not preempted, but just mitigated, when they occur. It is important to create a concept against possible misuse, especially when the control over the results are limited, onece the algorithm is rolled out.<br />
 
 
 ### Prevention
@@ -242,7 +248,7 @@ The use of generative ai in recent months has had unintended consequences. These
  Check if there are any guidelines in your area of research. These guidelines usually draw from mulitple sources and instances in which problems arose. This can help to create a robust foundation that can prevent the data or technology from being used in unwanted ways. Just following guidelines alone might not be enough to fully prevent these cases.
  <br />
 
-**Check other applications**<br>
+ **Check other applications**<br>
  As mentioned before, it is also important to check in which fields or other ways the technology and data might be useable or applicable. It is almost impossible to consider all possible application, but finding the most likely related fields can help to stop unwan
 
 ### Videos
@@ -255,13 +261,13 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
 ### Quiz
 
 ## May cause direct harm
-### Definition
-Wherever the label "May cause direct harm" is applied, special care needs to be taken when creating technology or algorithms.
-This usually applies in healthcare, public transportation or more recently with ai chatbots.
+<img src="img/direct-harm.png" alt="direct-harm" width="200"/>
+ Wherever the label "May cause direct harm" is applied, special care needs to be taken when creating technology or algorithms.
+ This usually applies in healthcare, public transportation or more recently with ai chatbots.
 
-Mistakes or wrong applications of technologies in these fields can have dangerous consequences resulting in physical or mental harm and distress to people. Technologies implemented in these areas need to be tested rigorously and extensively to keep the chance for failure as low as possible, even more so than in other fields.
+ Mistakes or wrong applications of technologies in these fields can have dangerous consequences resulting in physical or mental harm and distress to people. Technologies implemented in these areas need to be tested rigorously and extensively to keep the chance for failure as low as possible, even more so than in other fields.
 
-This label often appears in conjunction with other labels, as worst case scenarios due to lacking prevention measures in other cases can cause direct harm to individuals, e.g. incorret decision making of software causing mental or physical harm.
+ This label often appears in conjunction with other labels, as worst case scenarios due to lacking prevention measures in other cases can cause direct harm to individuals, e.g. incorret decision making of software causing mental or physical harm.
 
 ### Examples
  **Maneuvering Characteristics Augmentation System in Boeing 737 MAX planes**<br>
@@ -309,6 +315,7 @@ https://youtu.be/Q8oCilY4szc?t=1121 (Last week tonight) MCAS
 
 
 ## Generic Data Hazard
+<img src="img/general-hazard.png" alt="generic-hazard" width="200"/>
 The label is meant to create accountability by giving the creators the full responsibility of the output. It also encourages vetting the data sources and giving an extensive write-up of expectations and assumptions while addressing potential shortcomings. 
 
 ### How to apply data hazard labels?
