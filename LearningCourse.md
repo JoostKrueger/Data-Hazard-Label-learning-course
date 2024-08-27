@@ -13,16 +13,18 @@
  <br />
  <br />
  <br />
+
  **What is a data hazard label?**<br>
  A data hazard label is a warnings sign used in cases where there are dangers through wrong use of data or technology.
  <br />
  <br />
+
  **Why do we need hazard labels?**<br>
  Data hazard labels are a tool to help prevent harmful scenarios by giving perspectives on data or technology uses.
  <br />
  <br />
 
- **What are the goals of this course?<br>
+ **What are the goals of this course?**<br>
  This course aims first give an introduction into the concept of data hazard labels and then a more detailed overview of a selection of Data Hazard Labels. There are examples for each label to show consequences, as well as prevantative measures. Each section also contains a quiz to allow you to test your knowledge of each label!
  
 
@@ -47,7 +49,7 @@
   
   This example shows, just how important choosing input data can be and the consequences that can happen when there are unadressed problems in that data. Not only were the ressources and time development of the tool wasted, they also worsened the already existing problem of gender imbalance in the tech sector even further.
 
- **Societal Bias**  <br>
+ **Societal Bias** <br>
  Natural Language processing data can reinforce sexist biases due to a bias in training data. This could mean that a model evaluates certain jobs such as secretary or caretaker as intrinsically linked to women.
 
  Such cases were [studied](https://dl.acm.org/doi/abs/10.1145/3582269.3615599) and both natural and large language models were found perpetuate stereotypes.
@@ -115,7 +117,7 @@ Which is an example of societal bias in natural language processing data?
  Therefore, it is important to ensure the accuracy and fairness of the classification and ranking systems to avoid negative impacts on individuals and groups.
 
 ### Examples
- **Wellfare risk assessment**
+ **Wellfare risk assessment**<br>
  In 2014 the durch tax bureau used machine learning to classify families into different risk categories to prevent fraud for child benefits. The government had problems with families fraudulently claiming child benefits and had problems dealing with the administrative demands. The decision to prevent fraud started to aid with these problems and used a variety of data, like nationality, income and historical employment.
  The classifications were insufficient, as it did not have enough room for context and put hundreds of families into high risk groups for making small administrative mistakes or giving stricter conditions based on dual citizenship. If they were flagged they had to pay back all benefits retroactively and with additional fines on short notice. These repayments mainly affected low income families, which suffered heavily under these conditions. The algorithm was not transparent for those affected and prevented them from challenging their classifications properly and the limited categorization worsened the chances of flagged families even further.
  When the disproportional treatment due to minor mistakes or miscategorization was discovered in 2019 and a european commission was put into place which found evidence of discrimination and improper data usage. 
@@ -123,7 +125,7 @@ Which is an example of societal bias in natural language processing data?
  The scope of this scandal, dubbed the ["Toeslangenaffair"](https://www.uantwerpen.be/en/projects/aitax/publications/toeslagen/) and following findings would cause the ruling government at the time to resign. This case shows how strong the consequences for unadressed problems can be. Most of the affected families struggled to repay the benefits and were pushed into poverty. 
 
 
- **Automated hiring systems**
+ **Automated hiring systems**<br>
  Returning to the example of the [Amazon hiring system](#examples) the system ranked people according to their qualifications for tech jobs to give suggestions on whom to hire.
  As the system was trained with flawed data, it ranked women as less viable candidates than men. This bias in classification of individuals caused unfair treatment and had a negative impact on the gender imbalance by denying qualified women to enter the tech sector in a big employer in the sector.
 
@@ -229,6 +231,7 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
 
 
 ### Quiz
+Test your knowledge! (Multiple Choices can be true) <br>
 What are examples of automated decisionmaking processes?
 
 - [[x]] A customer service chatbot that provides predefined responses based on user queries
@@ -261,7 +264,7 @@ It is important consider the context and inherant deviations in the data, that c
 
 
 ### Examples
-**Cambridge Analytica**
+**Cambridge Analytica** <br>
  The political consulting firm Cambridge Analytica used data gathered from Facebook accounts and used it to build detailed user profiles to create specifically tailored political advertisements to influence voting behaviour for the US election in 2016. In 2018 the extent of the data usage and profiling was revealed and caused a huge public outcry followed by investigations from multiple institutions. The scope of the case and its implications of data security in an age of social media sparked debates and prompted lawmakers to draft bills to catch up to the rapidly evolving data privacy problems.
  There was misuse of data and technology in multiple parts of this process. The data Cambridge Analytica took from Facebook was never meant to create a political profile in the first place and users were not consulted or informed before the usage. This usage was therefore not only unethical and invasive, but also had no oversight about the correctness of profiling individuals.
  Furthermore the algorithm used was never meant for such detailed political profiling, instead being created for commercial marketing. 
@@ -270,7 +273,7 @@ It is important consider the context and inherant deviations in the data, that c
  Though a majority of this case was due to malicious intent, the misuse of both data and technology formed the base for the scandal and shows what can happen if these effects are just accepted without mitigation.
 
 
-**Generative AI**
+**Generative AI**<br>
  The use of generative ai in recent months has had unintended consequences. These range from misuse of data, by using data sources which had not consented to being used in harmful ways through political propaganda or personal slander using generated images. [Despite generative ai companies trying to reduce these cases, these cases are only getting worse.](https://counterhate.com/research/fake-image-factories-ii/). These cases could and should have been anticipated before the release and more time put into prevention.
  Even with more awareness being drawn to this problem, problems are not preempted, but just mitigated, when they occur. It is important to create a concept against possible misuse, especially when the control over the results are limited, onece the algorithm is rolled out.<br />
 
@@ -304,6 +307,7 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
 
 https://www.netflix.com/de-en/title/80117542 (Netflix - The Great Hack)
 ### Quiz
+Test your knowledge! (Multiple Choices can be true) <br>
 What are potential consequences of misusing algorithms or data outside their intended purposes? 
 
 - [[x]] It can lead to unusable or incorrect results
@@ -347,7 +351,7 @@ Which of the following are misuse?
 
  **Self driving cars**<br>
  This case highlighted the problems that could shows how extreme environments need to be tested thoroughly enough to prevent unforseen consequences.<br />
- There have been multiple instances of accidents due to software failure and overreliance on assisted driving features. In 2016 the sensors of a Tesla Model S car in florida failed to detect a white trailer against a brightly lit sky while also unable to completely asses the environment, causing the autopilot to fail to brake,[crashing the car into the trailer, which resulted in the death of the driver](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812481).
+ There have been multiple instances of accidents due to software failure and overreliance on assisted driving features. In 2016 the sensors of a Tesla Model S car in florida failed to detect a white trailer against a brightly lit sky while also unable to completely asses the environment, causing the autopilot to fail to brake, [crashing the car into the trailer, which resulted in the death of the driver](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812481).
  Another sensor failure occured in 2018 in Arizona, when the sensors of a self driving test-car misclassified a pedestrian which caused the car to hit the pedestrian.<br>
  While in both cases a human was ulitmately in charge of the system, they relied on the presumed safety of the cars system. These cases show that as many redundancies and preventative measures as possible should be taken to ensure that no system failure results in actual harm.
 
@@ -382,6 +386,7 @@ Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
 
 https://youtu.be/Q8oCilY4szc?t=1121 (Last week tonight) MCAS
 ### Quiz
+Test your knowledge! (Multiple Choices can be true) <br>
 Which of these algorithms or programs could cause significant mental or physical harm if not tested or implemented properly?
 
 - [[x]] A chatbot 
