@@ -227,10 +227,16 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
 
 
 ### Quiz
+What are examples of automated decisionmaking processes?
+- [[x]] A customer service chatbot that provides predefined responses based on user queries
+- [[ ]] A weather forecasting system that updates daily based on data from meteorological stations
+- [[x]] An AI system that approves or denies loans without human oversight
+- [[ ]] A recommendation engine that suggests products based on purchase history
+
 What are risks associated with automated decisionmaking?
-- [[]] Automated tasks are prone to making mistakes in routine processes
+- [[ ]] Automated tasks are prone to making mistakes in routine processes
 - [[ ]] Automation increases data processing speed which can overwhelm users
-- [[]] Automation is more expensive than manual decisionmaking
+- [[ ]] Automation is more expensive than manual decisionmaking
 - [[x]] An automated system might lack the context to make correct decisions
 
 What preventative measures should be taken to avoid problems with automated decisionmaking?
@@ -238,12 +244,6 @@ What preventative measures should be taken to avoid problems with automated deci
 - [[x]] Creating a transparent and understandable system
 - [[ ]] Only automating processes with minimal risk factors
 - [[x]] Considering wheter the process should be automated at all
-
-
-- [[x]] 
-- [[x]] 
-- [[x]] 
-- [[x]] 
 
 
 ## Danger of misuse
