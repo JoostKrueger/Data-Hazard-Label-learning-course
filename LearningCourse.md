@@ -20,7 +20,7 @@
  **Why do we need hazard labels?**<br>
  Data hazard labels are a tool to help prevent harmful scenarios by giving perspectives on data or technology uses.
  <br />
- <br //>
+ <br />
 
  **What are the goals of this course?<br>
  This course aims first give an introduction into the concept of data hazard labels and then a more detailed overview of a selection of Data Hazard Labels. There are examples for each label to show consequences, as well as prevantative measures. Each section also contains a quiz to allow you to test your knowledge of each label!
@@ -43,7 +43,7 @@
  **Input data**  <br>
   In 2014, retailer Amazon started to develop an automated hiring tool using applcation data from the company itself, that were sent in over a 10 year period. As the gender imbalance was even more pronounced during that time than it is today, a vast majority of the learning data lead to the algorithm favouring male candidates.
   Whenever the algorithm found the word "woman" in an application, it automatically ranked that application lower, which in turn would worsen the bias in the future, when that data was then used again for learning.
-  When the bias was discovered 4 years later in 2018, it caused a public outcry, leading the system to be scrapped (https://www.bbc.com/news/technology-45809919) entirely after fixing it proved too difficult.
+  When the bias was discovered 4 years later in 2018, it caused a public outcry, [leading to the system being scrapped](https://www.bbc.com/news/technology-45809919) entirely after fixing it proved too difficult.
   
   This example shows, just how important choosing input data can be and the consequences that can happen when there are unadressed problems in that data. Not only were the ressources and time development of the tool wasted, they also worsened the already existing problem of gender imbalance in the tech sector even further.
 
@@ -213,6 +213,8 @@ What are examples of an automated system that reinforces existing biases?
  **Human in the loop** <br>
  In high risk cases algorithms can give a recommendation with explanations on the influencing factors that explain the result. These recommendations can then evaluated by an expert who will make a final decision. This can help speed up a process or help find details a human might miss, without losing accountability. 
  This can be especially necessary in cases where there is a high risk of harm if mistakes are made.
+ <br />
+ <br />
  
  **Transparency**<br>
  It is important that decisions can be retraced understood by a human in a timely manner. It is important that actual users also have a chance to get at least a surface level understanding of how and why their input got placed or why it failed. This creates accountability and can allow for more intricate review of a case by a human. Transparency of the output is also very important to determine if the system is working as intended and to make potential issues addressable.
@@ -228,18 +230,21 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
 
 ### Quiz
 What are examples of automated decisionmaking processes?
+
 - [[x]] A customer service chatbot that provides predefined responses based on user queries
 - [[ ]] A weather forecasting system that updates daily based on data from meteorological stations
 - [[x]] An AI system that approves or denies loans without human oversight
 - [[ ]] A recommendation engine that suggests products based on purchase history
 
 What are risks associated with automated decisionmaking?
+
 - [[ ]] Automated tasks are prone to making mistakes in routine processes
 - [[ ]] Automation increases data processing speed which can overwhelm users
 - [[ ]] Automation is more expensive than manual decisionmaking
 - [[x]] An automated system might lack the context to make correct decisions
 
 What preventative measures should be taken to avoid problems with automated decisionmaking?
+
 - [[ ]] Only automating simple processes that dont involve critical decisionmaking
 - [[x]] Creating a transparent and understandable system
 - [[ ]] Only automating processes with minimal risk factors
@@ -276,7 +281,7 @@ It is important consider the context and inherant deviations in the data, that c
  This ensures that use cases not within these set boundaries need to be examined seperately by their creators. It is best however to try and find limitations and applications beforehand and outlining how to prevent such cases or why this technology, algorithm or data should not be used in certain cases. For this documentation it is important to use clear language and make the documentation easily accessible.
  <br />
 
- **Access control**
+ **Access control**<br>
  If a technology, algorithm or dataset carries risk, it can be helpful to implement an access control system to limit the use to trusted or vetted sources. This can also be implemented as an internal project policy, especially if personal data is involved.
  <br />
 
@@ -308,12 +313,14 @@ What are potential consequences of misusing algorithms or data outside their int
 
 
 What are recommended preventative measures to avoid the misuse of algorithms or data?
+
 - [[ ]] Covering ethical concers of data usage using the technical design of the algorithm
 - [[ ]] Adapting algorithms from similar projects
 - [[x]] Creating a detailed documentation of use cases and environments
 - [[x]] Do a regular review of current and future measures
 
 Which of the following are misuse?
+
 - [[x]] Using a facial recognicion software to asess the emotional state of an individual
 - [[ ]] Using data gathered for a similar project after making adaptations
 - [[ ]] Gathering new data for a project and analyzing it for biases
@@ -334,19 +341,19 @@ Which of the following are misuse?
  **Maneuvering Characteristics Augmentation System in Boeing 737 MAX planes**<br>
  The Boeing 737 MAX aircraft series were equipped with a Maneuvering Characteristics Augmentation System (MCAS), which is a flight control system created to help prevent stalling by pitching the nose of the plane downwards when external sensors measured certain conditions.
  Pilots often did not know the system existed and when it falsely activated in two separate cases an became a major contributor to both planes crashing.
- These systems were able to cause critical changes in the planes behaviour and lives were lost because of it. These systems tests had not been extensive enough and multiple design decisions contributed to the ulitmate failure. http://avherald.com/files/ethiopian_b38m_et-avj_190310_final_report_20221226.pdf (p.201-202)
+ These systems were able to cause critical changes in the planes behaviour and lives were lost because of it. These systems tests had not been extensive enough and [multiple design decisions contributed to the ulitmate failure.](http://avherald.com/files/ethiopian_b38m_et-avj_190310_final_report_20221226.pdf) (p.201-202)
  Both plane crashes lead to harm which might have been avoided if more measures for prevention of harm had been implemented.   
 
 
  **Self driving cars**<br>
- There have been multiple instances of accidents due to software failure and overreliance on assisted driving features. In 2016 the sensors of a Tesla Model S car in florida failed to detect a white trailer against a brightly lit sky while also unable to completely asses the environment, causing the autopilot to fail to brake, crashing the car into the trailer, which resulted in the death of the driver. https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812481
  This case highlighted the problems that could shows how extreme environments need to be tested thoroughly enough to prevent unforseen consequences.<br />
+ There have been multiple instances of accidents due to software failure and overreliance on assisted driving features. In 2016 the sensors of a Tesla Model S car in florida failed to detect a white trailer against a brightly lit sky while also unable to completely asses the environment, causing the autopilot to fail to brake,[crashing the car into the trailer, which resulted in the death of the driver](https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812481).
  Another sensor failure occured in 2018 in Arizona, when the sensors of a self driving test-car misclassified a pedestrian which caused the car to hit the pedestrian.<br>
  While in both cases a human was ulitmately in charge of the system, they relied on the presumed safety of the cars system. These cases show that as many redundancies and preventative measures as possible should be taken to ensure that no system failure results in actual harm.
 
 
  **Diagnoses**<br>
- A medical algorithm for cancer screenings might come to an incorrect conclusion and give a false positive result, which would cause physical, mental and financial harm to an individual. The impact of a false positive have been studied (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9931091/) and the consequences should be examined carefully before any use of such an algorithm.
+ A medical algorithm for cancer screenings might come to an incorrect conclusion and give a false positive result, which would cause physical, mental and financial harm to an individual. The impact of a false positive have been [studied] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9931091/) and the consequences should be examined carefully before any use of such an algorithm.
  Such cases do not mean that such technology should never be used, as they can have great positive impacts, however it highlights the importance of testing and finding a balance between maximizing helpfulness while minimizing harm.
 
 
@@ -376,12 +383,14 @@ Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
 https://youtu.be/Q8oCilY4szc?t=1121 (Last week tonight) MCAS
 ### Quiz
 Which of these algorithms or programs could cause significant mental or physical harm if not tested or implemented properly?
+
 - [[x]] A chatbot 
 - [[x]] A self driving car
 - [[x]] An AI generating images
 - [[ ]] A GPS navigation system
 
 What are effective prevention measures against potential harm caused by algorithms?
+
 - [[ ]] Making the algorithms decision-making process opaque to prevent misuse
 - [[ ]] Limiting the algorithms use to only trusted partners and organizations
 - [[ ]] Reducing the number of users interacting with the algorithm
@@ -389,6 +398,7 @@ What are effective prevention measures against potential harm caused by algorith
 
 
 What differentiates the "May Cause Harm" label from other data hazard labels?
+
 - [[x]] Negative consequences from problems with this label can cause serious mental and physical harm
 - [[x]] It has extremely small margins of error
 - [[ ]] Ensuring that data and algorithms do not contain errors
