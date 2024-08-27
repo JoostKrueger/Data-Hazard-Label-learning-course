@@ -19,8 +19,11 @@
  <br />
  **Why do we need hazard labels?**<br>
  Data hazard labels are a tool to help prevent harmful scenarios by giving perspectives on data or technology uses.
+ <br />
+ <br //>
 
  **What are the goals of this course?<br>
+ This course aims first give an introduction into the concept of data hazard labels and then a more detailed overview of a selection of Data Hazard Labels. There are examples for each label to show consequences, as well as prevantative measures. Each section also contains a quiz to allow you to test your knowledge of each label!
  
 
 ## Reinforces Existing Biases
@@ -57,15 +60,16 @@
 ### Prevention
  To minimize the risk of perpetuating a bias based there are multiple strategies that can be applied when using data, software or algorithms that have the Reinforces Existing Biases label.
 
- **Analyzing Input data:**  <br>
- By analyzing the input data carefully and checking the whether the data origin considered diverse and representative groups, the negative impacts of a bias can be mitigated.
+ **Choosing and Analyzing Input data:**  <br>
+ By analyzing the input data carefully and checking the whether the data origin considered diverse and representative groups, the negative impacts of a bias can be mitigated. The data collection groups and methods should also be checked for appropriate represetation and diversity.
 
 **Testing for biases:** <br> 
- There are multiple tests that can check for biases, which can highlight problems. Testing the algorithms performance for marginalized groups can also give insight into how the software or algorithm might impact these groups.
+ There are multiple tests that can check for biases and highlight potential problems both for data and algorithms. 
+ Testing the algorithms performance for marginalized groups can also give insight into how the software or algorithm might impact these groups.
+ This should be implemented as a repeating part of the review process to mitigate biases introduced during the development
 
 **Avoiding harmful tools or policies:**  <br>
- There are tools and policies (e.g. predictive policing policies) that are known to reinforce systemic biases. By intentionally excluding these tools from use in algorithms a bias might be avoided.
-
+ There are tools and policies (e.g. predictive policing policies) that are known to reinforce systemic biases. By intentionally excluding these tools from use in algorithms a bias might be avoided. Also avoid using tools that were not tested for the current usecase or environment, more on problems with that case and prevention for it under [Danger of Misuse](#danger-of-misuse). 
 
 
 ### Videos
@@ -127,16 +131,19 @@ Which is an example of societal bias in natural language processing data?
 
 ### Prevention
  **Testing for different groups** <br>
- Testing the algorithm on different groups ensures that no side effects or disproportional impact of groups due to the classification system.
+ Testing the algorithm on different groups ensures that no side effects or disproportional impact of groups due to the classification system. Some groupings might be too restrictive to actually reflect reality or introduce a bias into the process.
 
  **Verify validity of classification groups** <br>
  To ensure the validity of the classification groups, experts and subject specialists should be involved in the creation of the ranking system. This ensures that different views are represented and that the categories are needed for the end goal of the algorithm or technology.
 
  **Transparency** <br>
- By communicating weaknesses and shortcomings of the algorithm or technology openly, trust can be built and those shortcomings addressed. Testing for weaknesses and exploitable points in the algorithm to prevent the abuse of classification that give an undue advantage or disadvantage.
+ By communicating weaknesses and shortcomings of the algorithm or technology openly, trust can be built and those shortcomings addressed. Testing for weaknesses and exploitable points in the algorithm to prevent the abuse of classification that give an undue advantage or disadvantage. It is also important to explain the process of the categorization or grouping to allow for external review and helping the groups understand how and why the groups were created a certain way.
 
  **Alternative ranking** <br>
  Its important to consider different alternative rankings and confer with experts on the most fitting system. This allows for different viewpoints which reduces the risk of miscategorizing groups.  Self-selecting can also be a good way to grade people, as this allows them to consider their own nuances and contribute instead of being put into categories without being able to influence the process at all.
+
+ **Human in the loop**
+ If the data is automatically categorized, it can help to implement a human in the loop approach. Cases in which classification might rely on context is not as easy to sort, so having a human verify the validity of such cases can help improve the accuracy.
 
 
 ### Videos
@@ -178,7 +185,6 @@ What are examples of an automated system that reinforces existing biases?
  Understanding who controls the automation process and ensuring this process is transparent and accountable, are key factors in managing this data hazard effectively.
 
 ### Examples
-
 **Banking proces**<br>
  A low risk example of an automated decisionmaking process are bank transfers. Most bank transfers are carried out automatically with the system highlighting irregular transfers, which then in turn have to be evaluated by a human.
  These automated decisions have precautions in place and can show how properly implemented decisions can help while also providing adequate safety. <br>
@@ -205,7 +211,8 @@ What are examples of an automated system that reinforces existing biases?
  <br />
 
  **Human in the loop** <br>
- In high risk cases algorithms can give a recommendation with explanations, which are then evaluated by an expert who will then make a final decision. This can help 
+ In high risk cases algorithms can give a recommendation with explanations on the influencing factors that explain the result. These recommendations can then evaluated by an expert who will make a final decision. This can help speed up a process or help find details a human might miss, without losing accountability. 
+ This can be especially necessary in cases where there is a high risk of harm if mistakes are made.
  
  **Transparency**<br>
  It is important that decisions can be retraced understood by a human in a timely manner. It is important that actual users also have a chance to get at least a surface level understanding of how and why their input got placed or why it failed. This creates accountability and can allow for more intricate review of a case by a human. Transparency of the output is also very important to determine if the system is working as intended and to make potential issues addressable.
@@ -220,18 +227,42 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
 
 
 ### Quiz
+What are risks associated with automated decisionmaking?
+- [[]] Automated tasks are prone to making mistakes in routine processes
+- [[ ]] Automation increases data processing speed which can overwhelm users
+- [[]] Automation is more expensive than manual decisionmaking
+- [[x]] An automated system might lack the context to make correct decisions
+
+What preventative measures should be taken to avoid problems with automated decisionmaking?
+- [[ ]] Only automating simple processes that dont involve critical decisionmaking
+- [[x]] Creating a transparent and understandable system
+- [[ ]] Only automating processes with minimal risk factors
+- [[x]] Considering wheter the process should be automated at all
+
+
+- [[x]] 
+- [[x]] 
+- [[x]] 
+- [[x]] 
 
 
 ## Danger of misuse
 <img src="img/misuse.png" alt="misuse" width="200"/>
  The "Danger of misuse" labels applies when algorithms or data can be outside of their intended purposes, often leading to unintended and potentially harmful consequences. Algorithms are designed with specific goals and environments in mind and when outside of these, they may produce wrong or unusable results. This misuse can be dangerous because the algorithms or data might lack the necessary safeguards or considerations for contexts they were not designed for, leading to decisions that could harm individuals or groups. 
 
-For data the collection is one of the most important issues to consider and using data gathered for another purpose use may skew or invalidate the results outright. Thus it is important consider the context and inherant deviations in the data.
+For data the collection is one of the most important issues to consider and using data gathered for another purpose use may skew or invalidate the results outright.
+It is important consider the context and inherant deviations in the data, that could result from the collection methods, societal context or ethical problems.
+
 
 
 ### Examples
 **Cambridge Analytica**
- The political consulting firm Cambridge Analytica used data gathered from Facebook accounts and used it to build detailed user profiles to create 
+ The political consulting firm Cambridge Analytica used data gathered from Facebook accounts and used it to build detailed user profiles to create specifically tailored political advertisements to influence voting behaviour for the US election in 2016. In 2018 the extent of the data usage and profiling was revealed and caused a huge public outcry followed by investigations from multiple institutions. The scope of the case and its implications of data security in an age of social media sparked debates and prompted lawmakers to draft bills to catch up to the rapidly evolving data privacy problems.
+ There was misuse of data and technology in multiple parts of this process. The data Cambridge Analytica took from Facebook was never meant to create a political profile in the first place and users were not consulted or informed before the usage. This usage was therefore not only unethical and invasive, but also had no oversight about the correctness of profiling individuals.
+ Furthermore the algorithm used was never meant for such detailed political profiling, instead being created for commercial marketing. 
+
+ At multiple points both data and technology were misused as well as great ethical concerns ignored. The resulting fallout of this scandal lead to legal reforms, as well as the shutdown of the company. It remains one of the greatest scandals in tech history and prompted a wave of data ethics and security research.
+ Though a majority of this case was due to malicious intent, the misuse of both data and technology formed the base for the scandal and shows what can happen if these effects are just accepted without mitigation.
 
 
 **Generative AI**
@@ -241,15 +272,23 @@ For data the collection is one of the most important issues to consider and usin
 
 ### Prevention
  **Explaining use**<br>
- Explain the exact circumsances and environments in which the technology or data is meant to be used. This ensures that use cases not within these set boundaries need to be examined seperately by their creators. It is best however to try and find limitations and applications beforehand and outlining how to prevent such cases or why this technology, algorithm or data should not be used in certain cases.
+ Explain the exact circumsances and environments in which the technology or data is meant to be used in a detailed documenation.
+ This ensures that use cases not within these set boundaries need to be examined seperately by their creators. It is best however to try and find limitations and applications beforehand and outlining how to prevent such cases or why this technology, algorithm or data should not be used in certain cases. For this documentation it is important to use clear language and make the documentation easily accessible.
+ <br />
+
+ **Access control**
+ If a technology, algorithm or dataset carries risk, it can be helpful to implement an access control system to limit the use to trusted or vetted sources. This can also be implemented as an internal project policy, especially if personal data is involved.
  <br />
 
  **Follow guidelines**<br>
  Check if there are any guidelines in your area of research. These guidelines usually draw from mulitple sources and instances in which problems arose. This can help to create a robust foundation that can prevent the data or technology from being used in unwanted ways. Just following guidelines alone might not be enough to fully prevent these cases.
  <br />
 
- **Check other applications**<br>
- As mentioned before, it is also important to check in which fields or other ways the technology and data might be useable or applicable. It is almost impossible to consider all possible application, but finding the most likely related fields can help to stop unwan
+ **Check for other applications**<br>
+ As mentioned before, it is also important to check in which fields or other ways the technology and data might be useable or applicable. It is almost impossible to consider all possible application, but finding likely related usecases can help to prevent misuse of the algorithm or data.
+
+ **Implement review system**
+ Implementing a review system to check the status of the overall project can also be helpful to check wheter the originally planned scope is still applicable as a project continues. It is important to keep such a review system as a regular part of development to reevaluate the effectiveness of current preventative measures and if more are needed.
 
 ### Videos
 Black Mirror: "The Entire History of You" (S1E3)
@@ -258,7 +297,29 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
 5:14-5:30 (Deepfakes)
 18:47-19:12 (Huawei testet Gesichtserkennung in China zur Erkennung von Uiguren)
 
+https://www.netflix.com/de-en/title/80117542 (Netflix - The Great Hack)
 ### Quiz
+What are potential consequences of misusing algorithms or data outside their intended purposes? 
+
+- [[x]] It can lead to unusable or incorrect results
+- [[ ]] It increases the cost of the development process
+- [[x]] It can lead to decreased responsibility
+- [[x]] It can undermine public trust
+
+
+What are recommended preventative measures to avoid the misuse of algorithms or data?
+- [[ ]] Covering ethical concers of data usage using the technical design of the algorithm
+- [[ ]] Adapting algorithms from similar projects
+- [[x]] Creating a detailed documentation of use cases and environments
+- [[x]] Do a regular review of current and future measures
+
+Which of the following are misuse?
+- [[x]] Using a facial recognicion software to asess the emotional state of an individual
+- [[ ]] Using data gathered for a similar project after making adaptations
+- [[ ]] Gathering new data for a project and analyzing it for biases
+- [[x]] Using a marketing algorithm to make predictions about consumer behaviours
+
+
 
 ## May cause direct harm
 <img src="img/direct-harm.png" alt="direct-harm" width="200"/>
@@ -289,16 +350,19 @@ Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
  Such cases do not mean that such technology should never be used, as they can have great positive impacts, however it highlights the importance of testing and finding a balance between maximizing helpfulness while minimizing harm.
 
 
-
 ### Prevention
  **Testing** <br>
- Testing in cases where direct harm can be caused needs to be extensive, cover all edge cases and extreme circumsances to prevent unexpected or mistaken behaviour. It is also important to set a margin of error to see if the technology or algorithm can be used safely enough and if it cant whether it should be used at all.
+ Testing in cases where direct harm can be caused needs to be extensive, cover all edge cases and extreme circumsances to prevent unexpected or mistaken behaviour. It is also important to set a margin of error to see if the technology or algorithm can be used safely enough and if it cant whether it should be used at all. 
+ These tests can work their way up from tightly controlled tests to real life application tests. 
+ In cases where harm may be caused it is extremely important to document the circumstances and environments in which the system is supposed to be used to prevent the potential consequences of failure due to circumstances it was not designed to handle.
 
  **Human in the loop** <br>
  In some cases a human in the loop approach can be used to give an additional layer of safety. By letting a person review the results potential unwanted behaviours can be found before harm occurs and prevent it.
+ This approach may not be applicable to all situation but in system which do not have time critical decisionmaking, a human having the final responisibility can prevent worst case scenarios from causing damage.
 
  **Fail-safes** <br>
- Implementing fail-safes can reduce and mitigate harm in the case of malfunciton. These fail-safes activate when unexpected or unwanted behaviours occur to stop them from causing harm. These cases need to make sure that no harm is caused by the sudden stoppage, for this case they can also send alerts to draw awareness.
+ Implementing fail-safes can reduce and mitigate harm in the case of malfunciton. These fail-safes activate when unexpected or unwanted behaviours occur to stop them from causing harm. These measures need to have checks in place to determine that no harm is caused by the sudden stoppage of a syttem. In such cases alerts can be sent to draw awareness to the problem.
+ Having redundant systems in place to take over when a system fails can help bridge gaps until the cause of the problem can be addressed. Redundancies can also be placed to double check the results of a system are correct to reduce the chance of catastrophic failure due to malfunctions or bugs.
 
 
 ### Videos
@@ -311,12 +375,30 @@ Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
 
 https://youtu.be/Q8oCilY4szc?t=1121 (Last week tonight) MCAS
 ### Quiz
+Which of these algorithms or programs could cause significant mental or physical harm if not tested or implemented properly?
+- [[x]] A chatbot 
+- [[x]] A self driving car
+- [[x]] An AI generating images
+- [[ ]] A GPS navigation system
 
+What are effective prevention measures against potential harm caused by algorithms?
+- [[ ]] Making the algorithms decision-making process opaque to prevent misuse
+- [[ ]] Limiting the algorithms use to only trusted partners and organizations
+- [[ ]] Reducing the number of users interacting with the algorithm
+- [[x]] Implement multiple failsafes and redundancies
+
+
+What differentiates the "May Cause Harm" label from other data hazard labels?
+- [[x]] Negative consequences from problems with this label can cause serious mental and physical harm
+- [[x]] It has extremely small margins of error
+- [[ ]] Ensuring that data and algorithms do not contain errors
+- [[ ]] It needs transparency to work
 
 
 ## Generic Data Hazard
 <img src="img/general-hazard.png" alt="generic-hazard" width="200"/>
 The label is meant to create accountability by giving the creators the full responsibility of the output. It also encourages vetting the data sources and giving an extensive write-up of expectations and assumptions while addressing potential shortcomings. 
+It forms the basis for all other data hazards. 
 
 ### How to apply data hazard labels?
 The application of data hazard labels is not meant as an apply and be done with it concept. The labels are meant to open up discussion and help with reflection on responsible ethical use and potential consequences of data science.
