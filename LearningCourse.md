@@ -20,19 +20,19 @@
  <br />
 
  **Why do we need hazard labels?**<br>
- Data hazard labels are a tool to help prevent harmful scenarios by giving perspectives on data or technology uses.
+ Data hazard labels are a tool to help prevent harmful scenarios by giving perspectives on data or technology uses. It is meant to draw attentions to potential problems, as well as offer solutions to mitigate negative scenarios.
  <br />
  <br />
 
  **What are the goals of this course?**<br>
- This course aims first give an introduction into the concept of data hazard labels and then a more detailed overview of a selection of Data Hazard Labels. There are examples for each label to show consequences, as well as prevantative measures. Each section also contains a quiz to allow you to test your knowledge of each label!
+ This course aims to first give an introduction into the concept of data hazard labels and then a more detailed overview of a selection of Data Hazard Labels. There are examples for each label to show consequences, as well as prevantative measures. Each section also contains a quiz to allow you to test your knowledge of each label!
  
 
 ## Reinforces Existing Biases
 <img src="img/reinforce-bias.png" alt="reinforce-bias" width="200"/><br>
  This label indicates that data, algorithms, or software could lead to unfair treatment of individuals or certain groups. There are various reasons why this hazard might arise.
 
- One source of bias can be the input data itself. If the data used contains biases and these are not corrected, the bias will be perpetuated. For example, if historical data reflects societal biases, algorithms trained on this data will likely replicate those biases.
+ One source of bias can be the input data itself. If the data used contains biases which are not adressed, the bias will be further perpetuated. For example, if historical data reflects societal biases, algorithms trained on this data will likely replicate those biases.
 
  Additionally, the design of an algorithm can introduce bias. If an algorithm gives more importance to certain characteristics, it might favor some individuals or groups over others. This can happen even if the intention is not to discriminate.
 
@@ -45,7 +45,7 @@
  **Input data**  <br>
   In 2014, retailer Amazon started to develop an automated hiring tool using applcation data from the company itself, that were sent in over a 10 year period. As the gender imbalance was even more pronounced during that time than it is today, a vast majority of the learning data lead to the algorithm favouring male candidates.
   Whenever the algorithm found the word "woman" in an application, it automatically ranked that application lower, which in turn would worsen the bias in the future, when that data was then used again for learning.
-  When the bias was discovered 4 years later in 2018, it caused a public outcry, [leading to the system being scrapped](https://www.bbc.com/news/technology-45809919) entirely after fixing it proved too difficult.
+  When the bias was discovered 4 years later in 2018, it caused a public outcry and after fixing it proved too difficult [the system was scrapped](https://www.bbc.com/news/technology-45809919).
   
   This example shows, just how important choosing input data can be and the consequences that can happen when there are unadressed problems in that data. Not only were the ressources and time development of the tool wasted, they also worsened the already existing problem of gender imbalance in the tech sector even further.
 
@@ -75,12 +75,13 @@
 
 
 ### Videos
+**Coded Bias**<br>
 Documentary: Coded Bias (https://www.imdb.com/title/tt11394170/)<br>
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F8aegvTVy5g?si=I6xfMBv5YQV_htnz&amp;start=682" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-[Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)](https://www.youtube.com/watch?v=F8aegvTVy5g)
+**ZDF Magazin Royale**<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8aegvTVy5g?si=I6xfMBv5YQV_htnz&amp;start=682" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+[Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)](https://www.youtube.com/watch?v=F8aegvTVy5g) (german)<br>
 [11:22-12:22](https://youtu.be/F8aegvTVy5g?t=683)
 
 ### Quiz
@@ -147,13 +148,15 @@ Which is an example of societal bias in natural language processing data?
  **Human in the loop**
  If the data is automatically categorized, it can help to implement a human in the loop approach. Cases in which classification might rely on context is not as easy to sort, so having a human verify the validity of such cases can help improve the accuracy.
 
-
 ### Videos
+ **Black mirror**<br>
 Black Mirror: "Nosedive" (S3E1) https://www.imdb.com/title/tt5497778/?ref_=ttep_ep1
 
-Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
-7:18-8:03 (Bewertung von Bewerbungen durch Algorithmen)
-20:25-21:19 (Weiterführung von oben, die Algorithmen lernen durch vorherige sexistische und rassistische Entscheidungen)
+**Last Week Tonight**<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sqa8Zo2XWc4?si=CahNMFb2UXE83JU9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+[Artificial Intelligence: Last Week Tonight with John Oliver (HBO)](https://youtu.be/Sqa8Zo2XWc4)<br>
+[7:18-8:03](https://youtu.be/Sqa8Zo2XWc4?t=435) (Automatic Evaluation of résumés)<br>
+[20:25-21:19](https://youtu.be/Sqa8Zo2XWc4?t=1223) (Influence of historical data on decisionmaking)
 
 
 ### Quiz
@@ -223,11 +226,13 @@ What are examples of an automated system that reinforces existing biases?
 
 
 ### Videos
-Black Mirror: "Hang the DJ" (S4E4)<br>
+ **Black mirror**<br>
+ Black Mirror: "Hang the DJ" (S4E4)<br>
 
-Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)<br>
-16:44-17:04 (KI-Einsatz in Waffen, israelische Harop-Drohne (automatisches Erfassen und Zerstören von Zielen))<br>
-18:01-18:32 (KI-Einsatz auch bei Eurofighters, s.o.)
+**ZDF Magazin Royale**<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8aegvTVy5g?si=VXpicFfoOM_j4h_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+[Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale](https://youtu.be/F8aegvTVy5g)(german)<br>
+[16:44-17:04](https://youtu.be/F8aegvTVy5g?t=1003) (facial recognicion software making decisions in drone strikes)<br>
 
 
 ### Quiz
@@ -299,13 +304,18 @@ It is important consider the context and inherant deviations in the data, that c
  Implementing a review system to check the status of the overall project can also be helpful to check wheter the originally planned scope is still applicable as a project continues. It is important to keep such a review system as a regular part of development to reevaluate the effectiveness of current preventative measures and if more are needed.
 
 ### Videos
-Black Mirror: "The Entire History of You" (S1E3)
+ **Black mirror**<br>
+ Black Mirror: "The Entire History of You" (S1E3)<br>
 
-Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)
-5:14-5:30 (Deepfakes)
-18:47-19:12 (Huawei testet Gesichtserkennung in China zur Erkennung von Uiguren)
+**ZDF Magazin Royale**<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8aegvTVy5g?si=_k0jWUz5GVZ8v1s3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+[Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale (10.09.2021)](https://youtu.be/F8aegvTVy5g) (german)<br>
+[5:14-5:30](https://youtu.be/F8aegvTVy5g?t=312) (Deepfakes and their problems)<br>
+[18:47-19:12](https://www.youtube.com/watch?v=F8aegvTVy5g&t=685s) (Chinese tech firm Huawei tests facial recognicion software to identify Uyghurs)
 
+**The Great Hack**<br>
 https://www.netflix.com/de-en/title/80117542 (Netflix - The Great Hack)
+
 ### Quiz
 Test your knowledge! (Multiple Choices can be true) <br>
 What are potential consequences of misusing algorithms or data outside their intended purposes? 
@@ -377,16 +387,20 @@ Which of the following are misuse?
 
 
 ### Videos
-Black Mirror: "The Entire History of You" (S1E3)
-		"Be Right Back" (S2E1)
+**Black mirror**<br>
+["The Entire History of You" (S1E3)](https://www.imdb.com/title/tt2089050/?ref_=ttep_ep3)<br>
+["Be Right Back" (S2E1)](https://www.imdb.com/title/tt2290780/?ref_=ttep_ep1)<br>
 
-Artificial Intelligence: Last Week Tonight with John Oliver (HBO) (27.02.2023)
-18:52-19:21 (Selbstfahrendes Auto überfährt Fußgängerin, weil es sie nicht als solche erkannt hat, da sie nicht über einen Zebrastreifen gegangen ist)
-19:22-20:07 (Dunkelhäutige Fußgänger werden auch nicht erkannt)
+
+**Last week tonight**<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sqa8Zo2XWc4?si=eo1F1ONN5Z5XSZHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+[Artificial Intelligence: Last Week Tonight with John Oliver (HBO)](https://youtu.be/Sqa8Zo2XWc4)<br>
+[18:52-19:21](https://youtu.be/Sqa8Zo2XWc4?t=1131) (Selfdriving car hits pedestrian as it fails to categorize them correclty)<br>
+[19:22-20:07](https://youtu.be/Sqa8Zo2XWc4?t=1161) (Pedestrian with darker skintones are not recognized correctly)
 
 https://youtu.be/Q8oCilY4szc?t=1121 (Last week tonight) MCAS
 ### Quiz
-Test your knowledge! (Multiple Choices can be true) <br>
+Test your knowledge! (Multiple Choices can be true) <br> 
 Which of these algorithms or programs could cause significant mental or physical harm if not tested or implemented properly?
 
 - [[x]] A chatbot 
@@ -413,13 +427,15 @@ What differentiates the "May Cause Harm" label from other data hazard labels?
 ## Generic Data Hazard
 <img src="img/general-hazard.png" alt="generic-hazard" width="200"/>
 The label is meant to create accountability by giving the creators the full responsibility of the output. It also encourages vetting the data sources and giving an extensive write-up of expectations and assumptions while addressing potential shortcomings. 
-It forms the basis for all other data hazards. 
+It forms the basis for all other data hazards can be used as a strating point and introduction of data hazard labels into projects.
 
 ### How to apply data hazard labels?
-The application of data hazard labels is not meant as an apply and be done with it concept. The labels are meant to open up discussion and help with reflection on responsible ethical use and potential consequences of data science.
+The application of data hazard labels is not meant as an "apply and be done with it concept". The labels are meant to open up discussion and help with reflection on responsible ethical use and potential consequences of data science.
 Ethics in data science is a complex topic so there is no need for a group to come to a definitive conclusion on which labels do or do not apply.
 
 The labels also allow external people to participate in discussions on the ethical impact a technology or algorithm might have which can be tough to get into otherwise. Researchers working in data science might not have the neccesary training or knowledge to be able to consider all these possible cases, which is why the data hazard project was started in the first place.
+
+Each member of the project should take a look at the labels and each prepare a number of labels that you believe might apply. Get together and discuss why you think a label should apply and what implicatinons such a decision would have. The group does not need to come to a unanimous conclusion, but each member should keep an open mind to the potential problems. You can also get external opinions, particularly from users or those affected by the results of the project. This process helps to view a project from different points of view and create a more robust system along with more accountability
 
 So if you are working on a project using data science, take a minute to think which labels could apply to your project and encourage others to do the same to get a well rounded perspective on the possible outcomes!
 
@@ -427,3 +443,41 @@ So if you are working on a project using data science, take a minute to think wh
 
 
 ### Sources and additional reading
+**Additional readings**<br>
+https://direct.mit.edu/books/oa-monograph/4660/Data-Feminism <br
+Data Feminism is a book highlighting the interesting intersection of feminism and data science. 
+It gives a historic overview on both the good and bad that data science has brought, alongside strategies to bring feminism more into the field to help against biased and discirimatory systems.
+The book also gives strategies on how to employ feminism effectively to help create more open and diverse projects.
+
+
+https://www.antidiskriminierungsstelle.de/SharedDocs/downloads/DE/publikationen/Expertisen/studie_diskriminierungsrisiken_durch_verwendung_von_algorithmen.pdf?__blob=publicationFile&v=3 (german)
+A report created by the german Federal Anti-Discrimination Agency, that takes a practical look at many of the problems that appear due to the problems described by the data hazard labels.
+It looks at societal, educational, legal and commercial problems and offers solutions to help combat these. It takes a specific look at discrimination introduced through the use of algorithms and 
+
+**Reinforces Existing biases**<br>
+https://www.bbc.com/news/technology-45809919 - BBC News: Amazon scrapped 'sexist AI' tool - Opened (16.08.2024)<br>
+https://dl.acm.org/doi/abs/10.1145/3582269.3615599 Gender bias and stereotypes in Large Language Models - Dockum, Kotek and Sun<br>
+
+https://youtu.be/F8aegvTVy5g - Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale - Opened (15.08.2024)
+
+**Ranks or classifies people**<br>
+https://www.uantwerpen.be/en/projects/aitax/publications/toeslagen/ - The toeslagenaffaire - Opened (20.08.2024) <br>
+https://youtu.be/Sqa8Zo2XWc4 - Artificial Intelligence: Last Week Tonight with John Oliver (HBO) - Opened (14.08.2024)
+
+**Automates decisionmaking**<br>
+https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing - Machine Bias - Angwin, Larson, Mattu and Kirchner <br>
+https://youtu.be/F8aegvTVy5g - Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale - Opened (15.08.2024)
+
+**Danger of misuse**<br>
+https://counterhate.com/research/fake-image-factories-ii/ - Fake Image Factories II - Center for Countering Digital Hate
+https://youtu.be/F8aegvTVy5g - Die Schwachstelle von KI – wir Menschen | ZDF Magazin Royale - Opened (15.08.2024)
+
+
+**May cause harm**<br>
+http://avherald.com/files/ethiopian_b38m_et-avj_190310_final_report_20221226.pdf - AIRCRAFT ACCIDENT INVESTIGATION BUREAU INVESTIGATION REPORT ON THE B737-MAX8 REG. ET-AVJ OPERATED BY ETHIOPIAN AIRLINES <br>
+https://crashstats.nhtsa.dot.gov/Api/Public/ViewPublication/812481 - Special Crash Investigations: On-Site Automated Driver Assistance System Crash Investigation of the 2015 Tesla Model S 70D <br>
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9931091/ - Estimating the lifetime risk of a false positive screening test result - White and Algeri
+
+
+
+
