@@ -444,14 +444,14 @@ So if you are working on a project using data science, take a minute to think wh
 
 ### Sources and additional reading
 **Additional readings**<br>
-https://direct.mit.edu/books/oa-monograph/4660/Data-Feminism <br
-Data Feminism is a book highlighting the interesting intersection of feminism and data science. 
+[Data Feminism](https://direct.mit.edu/books/oa-monograph/4660/Data-Feminism) is a book highlighting the interesting intersection of feminism and data science. 
 It gives a historic overview on both the good and bad that data science has brought, alongside strategies to bring feminism more into the field to help against biased and discirimatory systems.
-The book also gives strategies on how to employ feminism effectively to help create more open and diverse projects.
+The book also gives strategies on how to employ feminism effectively to help create more open and diverse projects.<br>
+<br />
 
 
-https://www.antidiskriminierungsstelle.de/SharedDocs/downloads/DE/publikationen/Expertisen/studie_diskriminierungsrisiken_durch_verwendung_von_algorithmen.pdf?__blob=publicationFile&v=3 (german)
-A report created by the german Federal Anti-Discrimination Agency, that takes a practical look at many of the problems that appear due to the problems described by the data hazard labels.
+
+The german Federal Anti-Discrimination Agency wrote a [report](https://www.antidiskriminierungsstelle.de/SharedDocs/downloads/DE/publikationen/Expertisen/studie_diskriminierungsrisiken_durch_verwendung_von_algorithmen.pdf?__blob=publicationFile&v=3), that takes a practical look at many of the problems that appear due to the problems described by the data hazard labels.
 It looks at societal, educational, legal and commercial problems and offers solutions to help combat these. It takes a specific look at discrimination introduced through the use of algorithms and 
 
 **Reinforces Existing biases**<br>
