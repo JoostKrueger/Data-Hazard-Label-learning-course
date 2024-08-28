@@ -145,7 +145,7 @@ Which is an example of societal bias in natural language processing data?
  **Alternative ranking** <br>
  Its important to consider different alternative rankings and confer with experts on the most fitting system. This allows for different viewpoints which reduces the risk of miscategorizing groups.  Self-selecting can also be a good way to grade people, as this allows them to consider their own nuances and contribute instead of being put into categories without being able to influence the process at all.
 
- **Human in the loop**
+ **Human in the loop** <br>
  If the data is automatically categorized, it can help to implement a human in the loop approach. Cases in which classification might rely on context is not as easy to sort, so having a human verify the validity of such cases can help improve the accuracy.
 
 ### Videos
